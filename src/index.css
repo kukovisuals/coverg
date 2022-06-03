@@ -1,0 +1,452 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * bitter:
+ *   - http://typekit.com/eulas/00000000000000003b9b364d
+ *   - http://typekit.com/eulas/00000000000000003b9b3649
+ * brandon-grotesque:
+ *   - http://typekit.com/eulas/0000000000000000000132df
+ *   - http://typekit.com/eulas/0000000000000000000132e3
+ *   - http://typekit.com/eulas/0000000000000000000132dd
+ *   - http://typekit.com/eulas/0000000000000000000132e1
+ *   - http://typekit.com/eulas/0000000000000000000132e5
+ * fira-mono:
+ *   - http://typekit.com/eulas/00000000000000003b9b4001
+ *
+ * © 2009-2022 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2020-11-30 22:11:51 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=hzn4qhc&ht=tk&f=10294.10296.10300.10302.10304.15982.15984.22487&a=15108808&app=typekit&e=css");
+
+@font-face {
+font-family:"brandon-grotesque";
+src:url("https://use.typekit.net/af/1da05b/0000000000000000000132df/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/1da05b/0000000000000000000132df/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/1da05b/0000000000000000000132df/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"brandon-grotesque";
+src:url("https://use.typekit.net/af/8f4e31/0000000000000000000132e3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/8f4e31/0000000000000000000132e3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/8f4e31/0000000000000000000132e3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"brandon-grotesque";
+src:url("https://use.typekit.net/af/2f8f3d/0000000000000000000132dd/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/2f8f3d/0000000000000000000132dd/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/2f8f3d/0000000000000000000132dd/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:300;font-stretch:normal;
+}
+
+@font-face {
+font-family:"brandon-grotesque";
+src:url("https://use.typekit.net/af/d8f71f/0000000000000000000132e1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/d8f71f/0000000000000000000132e1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/d8f71f/0000000000000000000132e1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:500;font-stretch:normal;
+}
+
+@font-face {
+font-family:"brandon-grotesque";
+src:url("https://use.typekit.net/af/031bc7/0000000000000000000132e5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff2"),url("https://use.typekit.net/af/031bc7/0000000000000000000132e5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff"),url("https://use.typekit.net/af/031bc7/0000000000000000000132e5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:900;font-stretch:normal;
+}
+
+@font-face {
+font-family:"bitter";
+src:url("https://use.typekit.net/af/7b3676/00000000000000003b9b364d/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/7b3676/00000000000000003b9b364d/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/7b3676/00000000000000003b9b364d/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"bitter";
+src:url("https://use.typekit.net/af/7a108a/00000000000000003b9b3649/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/7a108a/00000000000000003b9b3649/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/7a108a/00000000000000003b9b3649/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"fira-mono";
+src:url("https://use.typekit.net/af/79586e/00000000000000003b9b4001/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/79586e/00000000000000003b9b4001/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/79586e/00000000000000003b9b4001/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+/*.tk-brandon-grotesque { font-family: "brandon-grotesque",sans-serif; }
+.tk-bitter { font-family: "bitter",serif; }
+.tk-fira-mono { font-family: "fira-mono",monospace; }*/
+
+
+:root{
+	--background_skin: #efefef;
+	--card_background: #fff;
+	--font_light: #73777c;
+	--border_right: rgba(115,119,125,0.3);
+	--font_dark: #2d2d2d;
+	--line_color:  #73777c;;
+	--circle_color:  #ffe600;
+	--yellow_border: #ffd200;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+
+
+h1, h4{
+	font-family: brandon-grotesque,sans-serif;
+	/*font-weight: 700;*/
+	color: var(--font_dark)
+}
+h4{
+	font-size: 1.5em;
+	    line-height: 1.3em;
+}
+h1{
+	/*margin-block: 0;*/
+	font-size: 2em;    
+	margin-left: 4%;
+}
+body{
+	
+	background-color: var(--background_skin);
+}
+.insurance_policy_card_component{
+	background-color: var(--background_skin);
+}
+
+.insurance_policy_card_component_wrapper{
+	/*border: 1px solid black;*/
+	padding: 4vw 1vw;
+}
+
+.policy_card_child_component{
+	/*border: 1px solid blue;*/
+	margin-top:0;
+}
+
+
+.policy_card_child_component_wrapper{
+	/*border:  1px solid green;*/
+
+	background-color: var(--card_background) ;
+	margin: 4vw;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: auto 5% auto;
+	align-content: space-evenly;
+	    align-items: center;
+	box-shadow: none;
+	    padding: 4vw 5vw 3vw;
+    border-radius: 6px;
+}
+.policy_card_child_component_wrapper:first-child{
+	margin-top:2%;
+}
+.policy_card_child_component_wrapper.active{
+
+	box-shadow:  0px 20px 17px 3px #dddddd;
+}
+
+.policy_card_child_component_upperLevel{
+	/*border:  1px solid red;*/
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 1;
+}
+.policy_card_child_component_upperLevel_span,
+.policy_card_child_component_upperLevel_description{
+	color:  var(--font_light);
+	font-family: bitter;
+	font-size: 1.15em;
+	    line-height: 1.5em;
+
+}
+.policy_card_child_component_middle{
+	background-color: var(--line_color);
+	opacity: 0.3;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	height: 0.1vw;
+	    margin: 3vw 0;
+}
+.policy_card_child_component_lowerLevel2{
+		/*border-right:  1px solid red;*/
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 3;
+}
+
+.policy_card_child_component_upperLevel_dates{
+	display: flex;
+	flex-direction: column;
+}
+.policy_card_child_component_upperLevel_formated{
+	font-size: 1.3em;
+	font-family: brandon-grotesque;
+	font-weight:500;
+	opacity: 0.8;
+}
+.policy_card_child_component_upperLevel_span{
+font-size: 1em;
+    font-family: bitter, serif;
+    padding-top: 1vw;
+}
+
+.policy_card_child_component_logo{
+	/*border:  1px solid red;*/
+	grid-column-start: 3;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 3;
+
+}
+
+.policy_card_child_component_logo_img img{
+    width: 69%;
+}
+
+
+
+
+
+
+
+svg {
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+  }
+
+  ellipse{
+		stroke: var(--yellow_border);
+  }
+
+  polyline{
+    stroke: #000;
+  	stroke-width: 4;
+  	transform: translate(7%,0);
+  }
+
+
+
+
+@media only screen and (min-width: 700px) {
+
+	h4{
+		    font-size: 1.9231em;
+	}
+	.insurance_policy_card_component_wrapper{
+    padding: 4.169vw 0vw;
+	}
+	.insurance_policy_card_component_h1{
+		font-size:3em;
+		font-weight: 900;
+		    margin-left: 7.442%;
+	}
+  .policy_card_child_component_wrapper{
+		grid-template-columns: repeat(11,1fr);
+		grid-template-rows: auto 5% auto;
+		align-content: space-evenly;
+		    margin: 3vw 7.443%;;
+		            padding: 2% 1.9%;
+
+        row-gap: 2vw;
+        column-gap: 2vw;
+	}
+
+	.policy_card_child_component_circle{
+    place-self: center;
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 1;
+		grid-row-end: 1;
+
+		width: 100% ;
+			cursor:pointer;
+		justify-self: left;
+	}
+
+	.policy_card_child_component_upperLevel_description{
+		    font-size: 1em;
+	}
+
+
+
+
+		.policy_card_child_component_upperLevel_formated{
+			font-size: 1.2em;
+		}
+	.policy_card_child_component_upperLevel{
+
+		grid-column-start: 2;
+		grid-column-end: 11;
+		grid-row-start: 1;
+		grid-row-end: 1;
+	}
+
+	.policy_card_child_component_middle{
+
+		grid-column-start: 1;
+		grid-column-end: 12;
+		grid-row-start: 2;
+		grid-row-end: 2;
+		height: 0.1vw;
+		margin: 0;
+	}
+	.policy_card_child_component_lowerLevel1{
+		border-right: 1px solid var(--border_right);
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 3;
+		grid-row-end: 3;
+	}
+
+	.policy_card_child_component_lowerLevel2{
+		
+		border-right: 1px solid var(--border_right);
+
+		grid-column-start: 3;
+		grid-column-end: 7;
+		grid-row-start: 3;
+		grid-row-end: 3;
+		justify-self: stretch;
+
+	}
+	.policy_card_child_component_lowerLevel3{
+
+		grid-column-start: 7;
+		grid-column-end: 8;
+		grid-row-start: 3;
+		grid-row-end: 3;
+	}
+	.policy_card_child_component_lowerLevel4{
+		border-left: 1px solid var(--border_right);
+
+		grid-column-start: 8;
+		grid-column-end: 10;
+		grid-row-start: 3;
+		grid-row-end: 3;
+		    padding-left: 13%;
+	}
+
+	.policy_card_child_component_logo{
+
+		grid-column-start: 10;
+		grid-column-end: 12;
+		grid-row-start: 1;
+		grid-row-end: 1;
+
+	}
+
+	.policy_card_child_component_logo_img img{
+    width: 100%;
+	}
+
+
+}
+
+
+
+@media only screen and (min-width: 1288px) {
+
+	.insurance_policy_card_component_h1{
+			font-size: 4em;
+	    margin-left: 6.221%;
+
+	}
+	.insurance_policy_card_component_wrapper{
+		padding: 3.7267vw 0vw;
+	}
+  .policy_card_child_component_wrapper{
+		grid-template-columns: repeat(15,1fr);
+		grid-template-rows: auto 5% auto;
+		align-content: space-evenly;
+		margin:2.5vw 6.221%;
+		    row-gap: 1vw;
+	}
+
+		.policy_card_child_component_upperLevel_description{
+			font-size: 1.2em;
+		}
+		.policy_card_child_component_upperLevel_formated{
+			font-size: 1.3em;
+		}
+	.policy_card_child_component_circle{
+
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 1;
+		grid-row-end: 1;
+	}
+
+	.policy_card_child_component_upperLevel{
+
+		grid-column-start: 2;
+		grid-column-end: 13;
+		grid-row-start: 1;
+		grid-row-end: 1;
+	}
+	.policy_card_child_component_upperLevel h4{
+		font-size: 2em;
+		    line-height: 1.5em;
+	}
+
+	.policy_card_child_component_middle{
+
+		grid-column-start: 1;
+		grid-column-end: 13;
+		grid-row-start: 2;
+		grid-row-end: 2;
+		height: 0.1vw;
+	}
+	.policy_card_child_component_lowerLevel1{
+
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 3;
+		grid-row-end: 3;
+	}
+
+	.policy_card_child_component_lowerLevel2{
+		
+		grid-column-start: 3;
+		grid-column-end: 7;
+		grid-row-start: 3;
+		grid-row-end: 3;
+	}
+	.policy_card_child_component_lowerLevel3{
+
+		grid-column-start: 7;
+		grid-column-end: 8;
+		grid-row-start: 3;
+		grid-row-end: 3;
+	}
+	.policy_card_child_component_lowerLevel4{
+
+		grid-column-start: 8;
+		grid-column-end: 10;
+		grid-row-start: 3;
+		grid-row-end: 3;
+	}
+
+	.policy_card_child_component_logo{
+	
+		grid-column-start: 13;
+		grid-column-end: 15;
+		grid-row-start: 1;
+		grid-row-end: 4;
+
+	}
+
+	.policy_card_child_component_logo_img img{
+		width: 160%;
+	}
+
+
+}
