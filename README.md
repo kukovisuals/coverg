@@ -1,6 +1,6 @@
 # Insurance Policy Card
 
-![Design](/image/screenshot.png)
+![Design](/img/screenshot.png)
 
 This React project involves creating an insurance policy card component and requesting data from an API endpoint to build a listing of policies.
 
