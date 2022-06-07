@@ -79,7 +79,7 @@ font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
 	--background_skin: #efefef;
 	--card_background: #fff;
 	--font_light: #73777c;
-	--border_right: rgba(115,119,125,0.3);
+	--border_right: #E0E4E8;
 	--font_dark: #2d2d2d;
 	--line_color:  #73777c;;
 	--circle_color:  #ffe600;
@@ -94,18 +94,18 @@ font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
 
 
 h1, h4{
-	font-family: brandon-grotesque,sans-serif;
-	/*font-weight: 700;*/
+	font-family: brandon-grotesque;
+	font-weight: 700;
 	color: var(--font_dark)
 }
 h4{
-	font-size: 1.5em;
-	    line-height: 1.3em;
+	font-size: 1.5rem;
+    line-height: 1.83rem;	
 }
 h1{
 	/*margin-block: 0;*/
-	font-size: 2em;    
-	margin-left: 4%;
+	font-size: 2rem;    
+	margin-left: 1.333rem;
 }
 body{
 	
@@ -117,7 +117,7 @@ body{
 
 .insurance_policy_card_component_wrapper{
 	/*border: 1px solid black;*/
-	padding: 4vw 1vw;
+	padding: 1.333rem 0;
 }
 
 .policy_card_child_component{
@@ -127,56 +127,58 @@ body{
 
 
 .policy_card_child_component_wrapper{
-	/*border:  1px solid green;*/
-
 	background-color: var(--card_background) ;
-	margin: 4vw;
+	margin-left: 1.333rem;
+	margin-right: 1.333rem;
 	display: grid;
-	grid-template-columns: repeat(3,1fr);
+	grid-template-columns: repeat(4,1fr);
 	grid-template-rows: auto 5% auto;
 	align-content: space-evenly;
-	    align-items: center;
+	align-items: center;
 	box-shadow: none;
-	    padding: 4vw 5vw 3vw;
+	padding: 1.333rem;
     border-radius: 6px;
+	row-gap: 0.6rem;
+	margin-top:1.333rem;
 }
 .policy_card_child_component_wrapper:first-child{
-	margin-top:2%;
+	margin-top: 0.6rem;
 }
 .policy_card_child_component_wrapper.active{
 
-	box-shadow:  0px 20px 17px 3px #dddddd;
+	box-shadow:  0px 24px 32px rgba(45, 45, 45, 0.16);;
 }
 
 .policy_card_child_component_upperLevel{
 	/*border:  1px solid red;*/
 	grid-column-start: 1;
-	grid-column-end: 4;
+	grid-column-end: 5;
 	grid-row-start: 1;
 	grid-row-end: 1;
 }
-.policy_card_child_component_upperLevel_span,
+
+
 .policy_card_child_component_upperLevel_description{
 	color:  var(--font_light);
 	font-family: bitter;
-	font-size: 1.15em;
-	    line-height: 1.5em;
+	font-style: normal;
+	font-size: 1.15rem;
+    line-height: 1.5rem;
 
+	padding-top: 0.33rem;
 }
 .policy_card_child_component_middle{
-	background-color: var(--line_color);
-	opacity: 0.3;
 	grid-column-start: 1;
-	grid-column-end: 4;
+	grid-column-end: 5;
 	grid-row-start: 2;
 	grid-row-end: 2;
-	height: 0.1vw;
-	    margin: 3vw 0;
+	
+    border-bottom: 1px solid #E0E4E8;
 }
 .policy_card_child_component_lowerLevel2{
 		/*border-right:  1px solid red;*/
 	grid-column-start: 1;
-	grid-column-end: 3;
+	grid-column-end: 4;
 	grid-row-start: 3;
 	grid-row-end: 3;
 }
@@ -186,35 +188,30 @@ body{
 	flex-direction: column;
 }
 .policy_card_child_component_upperLevel_formated{
-	font-size: 1.3em;
+	font-size: 1.333rem;
 	font-family: brandon-grotesque;
-	font-weight:500;
-	opacity: 0.8;
+	font-weight:400;
+	font-style:normal;
+	color: var(--font_dark);
 }
 .policy_card_child_component_upperLevel_span{
-font-size: 1em;
-    font-family: bitter, serif;
-    padding-top: 1vw;
+	font-size: 1rem;
+	font-family: bitter, serif;
+	color: var(--font_light);
 }
 
 .policy_card_child_component_logo{
 	/*border:  1px solid red;*/
-	grid-column-start: 3;
-	grid-column-end: 3;
+	grid-column-start: 4;
+	grid-column-end: 5;
 	grid-row-start: 3;
 	grid-row-end: 3;
 
 }
 
 .policy_card_child_component_logo_img img{
-    width: 69%;
+    width: 100%;
 }
-
-
-
-
-
-
 
 svg {
     stroke-width: 2;
@@ -234,69 +231,80 @@ svg {
   }
 
 
+/*
+ *********************************************
+	tablet
+ *********************************************	
+ */
 
-
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 835px) {
 
 	h4{
-		    font-size: 1.9231em;
+		font-size: 1.666rem;
 	}
 	.insurance_policy_card_component_wrapper{
-    padding: 4.169vw 0vw;
+    	padding: 2.6667rem 0;
+	}
+	.policy_card_child_component_wrapper:first-child{
+		margin-top: 2rem;
 	}
 	.insurance_policy_card_component_h1{
-		font-size:3em;
+		font-size:2.666rem;
 		font-weight: 900;
-		    margin-left: 7.442%;
+		margin-left: 4.75rem;
 	}
   .policy_card_child_component_wrapper{
-		grid-template-columns: repeat(11,1fr);
+		grid-template-columns: repeat(12,1fr);
 		grid-template-rows: auto 5% auto;
 		align-content: space-evenly;
-		    margin: 3vw 7.443%;;
-		            padding: 2% 1.9%;
-
-        row-gap: 2vw;
-        column-gap: 2vw;
+		margin: 2rem 4.75rem;
+		padding: 1.3rem 1.3rem;
+		row-gap: 1.1666rem;
+		column-gap: 1.3rem;
 	}
 
 	.policy_card_child_component_circle{
-    place-self: center;
+		place-self: center;
 		grid-column-start: 1;
 		grid-column-end: 1;
 		grid-row-start: 1;
 		grid-row-end: 1;
 
-		width: 100% ;
-			cursor:pointer;
+		width: 108% ;
+		cursor:pointer;
 		justify-self: left;
 	}
 
 	.policy_card_child_component_upperLevel_description{
-		    font-size: 1em;
+	    font-size: 1.1666rem;
+	    height: 1.75rem;
+	    line-height: 1.75rem;
+	}
+	.policy_card_child_component_upperLevel_span{
+		font-size: 1rem;
 	}
 
-
-
-
-		.policy_card_child_component_upperLevel_formated{
-			font-size: 1.2em;
-		}
+	.policy_card_child_component_upperLevel_formated{
+		font-size: 1.333rem;
+	}
 	.policy_card_child_component_upperLevel{
 
 		grid-column-start: 2;
-		grid-column-end: 11;
+		grid-column-end: 12;
 		grid-row-start: 1;
 		grid-row-end: 1;
+	}
+	.policy_card_child_component_upperLevel h4{
+		font-size: 1.6rem;	
+		vertical-align: middle;
 	}
 
 	.policy_card_child_component_middle{
 
 		grid-column-start: 1;
-		grid-column-end: 12;
+		grid-column-end: 13;
 		grid-row-start: 2;
 		grid-row-end: 2;
-		height: 0.1vw;
 		margin: 0;
 	}
 	.policy_card_child_component_lowerLevel1{
@@ -321,15 +329,15 @@ svg {
 	.policy_card_child_component_lowerLevel3{
 
 		grid-column-start: 7;
-		grid-column-end: 8;
+		grid-column-end: 9;
 		grid-row-start: 3;
 		grid-row-end: 3;
 	}
 	.policy_card_child_component_lowerLevel4{
 		border-left: 1px solid var(--border_right);
 
-		grid-column-start: 8;
-		grid-column-end: 10;
+		grid-column-start: 9;
+		grid-column-end: 12;
 		grid-row-start: 3;
 		grid-row-end: 3;
 		    padding-left: 13%;
@@ -337,8 +345,8 @@ svg {
 
 	.policy_card_child_component_logo{
 
-		grid-column-start: 10;
-		grid-column-end: 12;
+		grid-column-start: 11;
+		grid-column-end: 13;
 		grid-row-start: 1;
 		grid-row-end: 1;
 
@@ -352,100 +360,116 @@ svg {
 }
 
 
+/*
+ ******************************************
+	Desktop
+ *****************************************
+ */
 
 @media only screen and (min-width: 1288px) {
 
 	.insurance_policy_card_component_h1{
-			font-size: 4em;
-	    margin-left: 6.221%;
-
+		font-size: 3.333rem;
+		margin-left: 6.666rem;
 	}
+
 	.insurance_policy_card_component_wrapper{
 		padding: 3.7267vw 0vw;
 	}
-  .policy_card_child_component_wrapper{
-		grid-template-columns: repeat(15,1fr);
+  	
+  	.policy_card_child_component_wrapper{
+		grid-template-columns: repeat(30,1fr);
 		grid-template-rows: auto 5% auto;
 		align-content: space-evenly;
-		margin:2.5vw 6.221%;
-		    row-gap: 1vw;
+		margin: 2.6666rem 6.6666rem;
+		gap: 1.4rem;
 	}
+	
+	.policy_card_child_component_upperLevel_description{
+		font-size: 1.1666rem;
+	}
+	
+	.policy_card_child_component_upperLevel_formated{
+		font-size: 1.333rem;
+		line-height:2rem;
+		text-align:left;
+	}
+	.policy_card_child_component_upperLevel_span{
 
-		.policy_card_child_component_upperLevel_description{
-			font-size: 1.2em;
-		}
-		.policy_card_child_component_upperLevel_formated{
-			font-size: 1.3em;
-		}
+		text-align:left;
+		padding-top: 4px;
+	}
 	.policy_card_child_component_circle{
-
+		width: 85%;
 		grid-column-start: 1;
-		grid-column-end: 1;
+		grid-column-end: 3;
 		grid-row-start: 1;
 		grid-row-end: 1;
 	}
 
 	.policy_card_child_component_upperLevel{
 
-		grid-column-start: 2;
-		grid-column-end: 13;
+		grid-column-start: 3;
+		grid-column-end: 24;
 		grid-row-start: 1;
 		grid-row-end: 1;
 	}
 	.policy_card_child_component_upperLevel h4{
-		font-size: 2em;
-		    line-height: 1.5em;
+		font-size: 2rem;
+		line-height: 2.5rem;
 	}
 
 	.policy_card_child_component_middle{
 
 		grid-column-start: 1;
-		grid-column-end: 13;
+		grid-column-end: 24;
 		grid-row-start: 2;
 		grid-row-end: 2;
-		height: 0.1vw;
 	}
 	.policy_card_child_component_lowerLevel1{
 
 		grid-column-start: 1;
-		grid-column-end: 3;
+		grid-column-end: 5;
 		grid-row-start: 3;
 		grid-row-end: 3;
 	}
 
 	.policy_card_child_component_lowerLevel2{
 		
-		grid-column-start: 3;
-		grid-column-end: 7;
+		grid-column-start: 5;
+		grid-column-end: 12;
 		grid-row-start: 3;
 		grid-row-end: 3;
 	}
 	.policy_card_child_component_lowerLevel3{
 
-		grid-column-start: 7;
-		grid-column-end: 8;
+		grid-column-start: 12;
+		grid-column-end: 15;
 		grid-row-start: 3;
 		grid-row-end: 3;
 	}
 	.policy_card_child_component_lowerLevel4{
 
-		grid-column-start: 8;
-		grid-column-end: 10;
+		grid-column-start: 15;
+		grid-column-end: 24;
 		grid-row-start: 3;
 		grid-row-end: 3;
+		padding-left: 1.6rem;
 	}
 
 	.policy_card_child_component_logo{
 	
-		grid-column-start: 13;
-		grid-column-end: 15;
+		grid-column-start: 24;
+		grid-column-end: 30;
 		grid-row-start: 1;
 		grid-row-end: 4;
 
 	}
-
+	.policy_card_child_component_logo_img{
+		padding-left: 1.4rem;
+	}
 	.policy_card_child_component_logo_img img{
-		width: 160%;
+		width: 119%;
 	}
 
 

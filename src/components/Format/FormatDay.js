@@ -1,7 +1,7 @@
 /**
   ********************************************************************************
   *  Check what type of format do we need to do and return the value from that key
-  *  @input {Object, string}
+  *  @param {Object, string}
   *  @return {string}
   ********************************************************************************
 **/
@@ -23,6 +23,10 @@ function FormatDay(data, action){
   }
 }
 
+/**
+  *  @param {string}  transform the month so it can be 10-OCT-2019
+  *  @return {string}
+**/
 const getDayMonthYear = (value) => {
 
   if(!value) return ''
@@ -35,6 +39,10 @@ const getDayMonthYear = (value) => {
   return `${getDay}-${MONTHS[getMonth]}-${getYear}`
 }
 
+/**
+  *  @param {string, string} - Append a 0 to digits bellow 10 so we can have 01 02 
+  *  @return {string}
+**/
 const getTheDay =  (value, action) => {
   let getDay = ''
 
@@ -61,6 +69,11 @@ const getTheDay =  (value, action) => {
   }
   return getDay
 }
+
+/**
+  *  @param {string} - Calculate the coverage_date so it can be 17-NOV-2019 to 17-NOV-2019
+  *  @return {string}
+**/
 const coverageDates =(data) =>{
 
   let dia = data.coverage_start_date
@@ -73,11 +86,19 @@ const coverageDates =(data) =>{
   return formated
 }
 
+/**
+  *  @param {string} - Calculate the paymentDate so it can be 10-NOV-2019
+  *  @return {string}
+**/
 const paymentDate =(data) =>{
   const formated = `${getDayMonthYear(data.payment_date)}`
   return formated
 }
 
+/**
+  *  @param {string} - Calculate the renewal date if annual is true so it can be 11-DEC-2020
+  *  @return {string}
+**/
 const renewalDate =(data) =>{
   if(data.renewal === null) {
     return ''
@@ -86,10 +107,19 @@ const renewalDate =(data) =>{
   return formated
 }
 
+/**
+  *  @param {string} - Calculate the premium so it can be AUD $50.15
+  *  @return {string}
+**/
 const premium =(data) =>{
   const formated = `${data.premium_formatted}`
   return formated
 }
+
+/**
+  *  @param {string} - return the description so it can be PROD-COVE-INS | Full Product Cover
+  *  @return {string}
+**/
 const description =(data) =>{
 
   const id = data.id.split('-')
