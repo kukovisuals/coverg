@@ -405,8 +405,8 @@ pre{
   	
   	.policy_card_child_component_wrapper{
 		
-		-ms-grid-template-columns: repeat(30,1fr);
-		-ms-grid-template-rows: auto 1% auto;
+		-ms-grid-columns: repeat(30,1fr);
+		-ms-grid-rows: auto 1% auto;
 
 		grid-template-columns: repeat(30,1fr);
 		grid-template-rows: auto 1% auto;
@@ -431,10 +431,8 @@ pre{
 	}
 	.policy_card_child_component_circle{
 		width: 85%;
-		-ms-grid-column-start: 1;
-		-ms-grid-column-end: 3;
-		-ms-grid-row-start: 1;
-		-ms-grid-row-end: 1;
+		-ms-grid-column: 1;
+		-ms-grid-row: 1;
 
 		grid-column-start: 1;
 		grid-column-end: 3;
@@ -444,10 +442,8 @@ pre{
 
 	.policy_card_child_component_upperLevel{
 
-		-ms-grid-column-start: 3;
-		-ms-grid-column-end: 24;
-		-ms-grid-row-start: 1;
-		-ms-grid-row-end: 1;
+		-ms-grid-column: 3;
+		-ms-grid-row: 1;
 
 		grid-column-start: 3;
 		grid-column-end: 24;
@@ -460,10 +456,8 @@ pre{
 	}
 
 	.policy_card_child_component_middle{
-		-ms-grid-column-start: 1;
-		-ms-grid-column-end: 24;
-		-ms-grid-row-start: 2;
-		-ms-grid-row-end: 2;
+		-ms-grid-column: 1;
+		-ms-grid-row: 2;
 
 		grid-column-start: 1;
 		grid-column-end: 24;
@@ -472,10 +466,8 @@ pre{
 	}
 	.policy_card_child_component_lowerLevel1{
 
-		-ms-grid-column-start: 1;
-		-ms-grid-column-end: 5;
-		-ms-grid-row-start: 3;
-		-ms-grid-row-end: 3;
+		-ms-grid-column: 1;
+		-ms-grid-row: 3;
 
 		grid-column-start: 1;
 		grid-column-end: 5;
@@ -485,10 +477,8 @@ pre{
 
 	.policy_card_child_component_lowerLevel2{
 		
-		-ms-grid-column-start: 5;
-		-ms-grid-column-end: 12;
-		-ms-grid-row-start: 3;
-		-ms-grid-row-end: 3;
+		-ms-grid-column: 5;
+		-ms-grid-row: 3;
 
 		grid-column-start: 5;
 		grid-column-end: 12;
@@ -497,10 +487,8 @@ pre{
 	}
 	.policy_card_child_component_lowerLevel3{
 
-		-ms-grid-column-start: 12;
-		-ms-grid-column-end: 15;
-		-ms-grid-row-start: 3;
-		-ms-grid-row-end: 3;
+		-ms-grid-column: 12;
+		-ms-grid-row: 3;
 
 		grid-column-start: 12;
 		grid-column-end: 15;
@@ -509,24 +497,18 @@ pre{
 	}
 	.policy_card_child_component_lowerLevel4{
 
-		-ms-grid-column-start: 15;
-		-ms-grid-column-end: 24;
-		-ms-grid-row-start: 3;
-		-ms-grid-row-end: 3;
+		-ms-grid-column: 15;
+		-ms-grid-row: 3;
 
 		grid-column-start: 15;
-		grid-column-end: 24;
 		grid-row-start: 3;
-		grid-row-end: 3;
 		padding-left: 1.6rem;
 	}
 
 	.policy_card_child_component_logo{
 	
-		-ms-grid-column-start: 24;
-		-ms-grid-column-end: 30;
-		-ms-grid-row-start: 1;
-		-ms-grid-row-end: 4;
+		-ms-grid-column: 24;
+		-ms-grid-row: 1;
 
 		grid-column-start: 24;
 		grid-column-end: 30;
