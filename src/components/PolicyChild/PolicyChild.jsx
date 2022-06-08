@@ -1,15 +1,14 @@
 import React from 'react';
 import PolicyCard from '../PolicyCard/PolicyCard'
-function PolicyChild({data}){
 
-  if(data.length < 1 ){
-    return <p>Loading data...</p>
+function PolicyChild({data, screenWidth}){
+  
+  if(!data){
+    return <pre>Loading data...</pre>
   } 
-  data = data.policies
   return (
-    <div className="policy_card_child_component">
-        
-      {data.map( policies => <PolicyCard key={policies.title} info={policies} /> )}
+    <div className="policy_card_child_component">   
+      {data.map( policies => <PolicyCard responsiveBreak={screenWidth} key={policies.title} info={policies} /> )}
     </div>
   )
 }

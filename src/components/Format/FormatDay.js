@@ -19,6 +19,10 @@ function FormatDay(data, action){
       return premium(data)
     case 'description': 
       return description(data)
+    case 'coverage dates desktop': 
+      return coverageDatesDesktop(data)
+    case 'coverage or shipped': 
+      return coverageShipped(data)
     default: throw Error('Something Went wrong while formating the data')
   }
 }
@@ -77,15 +81,52 @@ const getTheDay =  (value, action) => {
 const coverageDates =(data) =>{
 
   let dia = data.coverage_start_date
+  let formated = ''
   if( (data.coverage_end_date == null )&& (typeof dia === 'string')){
+      // this line could be use to get the following year
       dia = (new Date(dia).getFullYear() + 1) + '-' + getTheDay(dia, 'month')+ '-' + getTheDay(dia, 'day')      
+      formated = `${getDayMonthYear(data.coverage_start_date)} to ${getDayMonthYear(dia)}`
+      // dia = ''    
+      // formated = `${getDayMonthYear(data.coverage_start_date)}`
   } else {
     dia = data.coverage_start_date
+    formated = `${getDayMonthYear(data.coverage_start_date)} to ${getDayMonthYear(dia)}`
   }
-  const formated = `${getDayMonthYear(data.coverage_start_date)} to ${getDayMonthYear(dia)}`
   return formated
 }
 
+/**
+  *  @param {string} - return the start date if end date is null
+  *  @return {string}
+**/
+const coverageDatesDesktop = (data) => {
+
+  let dia = data.coverage_start_date
+  let formated = ''
+  if( (data.coverage_end_date == null )&& (typeof dia === 'string')){
+      dia = ''    
+      formated = `${getDayMonthYear(data.coverage_start_date)}`
+  } else {
+    dia = data.coverage_start_date
+    formated = `${getDayMonthYear(data.coverage_start_date)} to ${getDayMonthYear(dia)}`
+  }
+  return formated
+}
+/**
+  *  @param {string} - if coverage_end_date is null return Date shipped else Coverage dates
+  *  @return {string}
+**/
+const coverageShipped = (data) => {
+
+  let output = ''
+  let dia = data.coverage_start_date
+  if( (data.coverage_end_date == null )&& (typeof dia === 'string')){
+    output = 'Date Shipped'
+  } else {
+    output = 'Coverage Dates'
+  }
+  return output
+}
 /**
   *  @param {string} - Calculate the paymentDate so it can be 10-NOV-2019
   *  @return {string}

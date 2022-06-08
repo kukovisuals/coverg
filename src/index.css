@@ -130,6 +130,9 @@ body{
 	background-color: var(--card_background) ;
 	margin-left: 1.333rem;
 	margin-right: 1.333rem;
+	display: -ms-grid;
+	-ms-grid-template-columns: repeat(4,1fr);
+	-ms-grid-template-rows: auto 5% auto;
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
 	grid-template-rows: auto 5% auto;
@@ -151,6 +154,11 @@ body{
 
 .policy_card_child_component_upperLevel{
 	/*border:  1px solid red;*/
+	-ms-grid-column-start: 1;
+	-ms-grid-column-end: 5;
+	-ms-grid-row-start: 1;
+	-ms-grid-row-end: 1;
+
 	grid-column-start: 1;
 	grid-column-end: 5;
 	grid-row-start: 1;
@@ -168,6 +176,11 @@ body{
 	padding-top: 0.33rem;
 }
 .policy_card_child_component_middle{
+	-ms-grid-column-start: 1;
+	-ms-grid-column-end: 5;
+	-ms-grid-row-start: 2;
+	-ms-grid-row-end: 2;
+
 	grid-column-start: 1;
 	grid-column-end: 5;
 	grid-row-start: 2;
@@ -177,6 +190,11 @@ body{
 }
 .policy_card_child_component_lowerLevel2{
 		/*border-right:  1px solid red;*/
+	-ms-grid-column-start: 1;
+	-ms-grid-column-end: 4;
+	-ms-grid-row-start: 3;
+	-ms-grid-row-end: 3;
+	
 	grid-column-start: 1;
 	grid-column-end: 4;
 	grid-row-start: 3;
@@ -202,6 +220,11 @@ body{
 
 .policy_card_child_component_logo{
 	/*border:  1px solid red;*/
+	-ms-grid-column-start: 4;
+	-ms-grid-column-end: 5;
+	-ms-grid-row-start: 3;
+	-ms-grid-row-end: 3;
+
 	grid-column-start: 4;
 	grid-column-end: 5;
 	grid-row-start: 3;
@@ -214,23 +237,26 @@ body{
 }
 
 svg {
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
 
-  }
+ellipse{
+	stroke: var(--yellow_border);
+}
 
-  ellipse{
-		stroke: var(--yellow_border);
-  }
-
-  polyline{
-    stroke: #000;
-  	stroke-width: 4;
-  	transform: translate(7%,0);
-  }
+polyline{
+	stroke: #000;
+	stroke-width: 4;
+	transform: translate(7%,0);
+}
 
 
+pre{
+	text-align:center;
+	font-size: 1.5rem;
+}
 /*
  *********************************************
 	tablet
@@ -255,7 +281,7 @@ svg {
 	}
   .policy_card_child_component_wrapper{
 		grid-template-columns: repeat(12,1fr);
-		grid-template-rows: auto 5% auto;
+		grid-template-rows: auto 1% auto;
 		align-content: space-evenly;
 		margin: 2rem 4.75rem;
 		padding: 1.3rem 1.3rem;
@@ -379,10 +405,10 @@ svg {
   	
   	.policy_card_child_component_wrapper{
 		grid-template-columns: repeat(30,1fr);
-		grid-template-rows: auto 5% auto;
+		grid-template-rows: auto 1% auto;
 		align-content: space-evenly;
 		margin: 2.6666rem 6.6666rem;
-		gap: 1.4rem;
+		gap: 1.333rem;
 	}
 	
 	.policy_card_child_component_upperLevel_description{
